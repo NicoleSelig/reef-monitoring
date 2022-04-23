@@ -13,7 +13,7 @@
 
 ##  React Native App
 You will need to install all of the dependencies  <br>
-`cd reef-monitoring-react-native-app` <br>
+`cd reef-monito-react-app` <br>
 `npm i`
 
 ## Running the App
