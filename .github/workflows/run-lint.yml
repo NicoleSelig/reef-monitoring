@@ -13,8 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install packages
-        run: npm install
+        working-directory: ./reef-monitor-react-app
+        run: npm ci
       - name: Prettier
+        working-directory: ./reef-monitor-react-app
         run: npm run format
       - name: Lint
+        working-directory: ./reef-monitor-react-app
         run: npm run lint
