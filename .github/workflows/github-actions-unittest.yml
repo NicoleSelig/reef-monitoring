@@ -16,8 +16,8 @@ jobs:
       - name: Use Node.js
         working-directory: ./reef-monitor-react-app
         uses: actions/setup-node@v3
-        with:
-          node-version: '12.x'
+        # with:
+          # node-version: '12.x'
       - name: Install dependencies
         run: npm install
       - run: npm run build --if-present
