@@ -12,13 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js
+  - uses: actions/checkout@v2
+      - name: Test using Node.js
+        uses: actions/setup-node@v1
         working-directory: ./reef-monitor-react-app
-        uses: actions/setup-node@v3
-        # with:
-          # node-version: '12.x'
-      - name: Install dependencies
-        run: npm install
-      - run: npm run build --if-present
+        with:
+          node-version: '12'
+      - run: npm install
       - run: npm test
