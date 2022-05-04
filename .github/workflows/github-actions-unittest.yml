@@ -8,13 +8,13 @@ on:
 
 jobs:
   test:
-    name: Unit Test
+    name: UnitTest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install packages
         working-directory: ./reef-monitor-react-app
         run: npm ci
-      - name: Unit Test
+      - name: UnitTest
         working-directory: ./reef-monitor-react-app
         run: npm test
