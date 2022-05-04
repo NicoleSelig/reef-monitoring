@@ -9,7 +9,8 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "lint" : "npx eslint ./",
-    "lint:fix": "npx eslint ./ --fix"
+    "lint:fix": "npx eslint ./ --fix",
+    "test": "jest"
   },
   "dependencies": {
     "expo": "~44.0.0",
