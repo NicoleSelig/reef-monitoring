@@ -8,7 +8,6 @@
 - [NodeJS](https://nodejs.org/en/)
 - [watchman](https://facebook.github.io/watchman/docs/install.html)
 
-This is a test change
 ### To install Expo run:
 `npm install -g expo`
 
