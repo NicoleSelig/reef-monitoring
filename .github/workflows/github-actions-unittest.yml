@@ -7,14 +7,14 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  test:
+    name: Unit Test
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      name: Test using unit test
-    - uses: actions/setup-node@v1
-      working-directory: ./reef-monitor-react-app
-      with:
-        node-version: '12'
-      run: npm install
-    - run: npm test
+      - uses: actions/checkout@v2
+      - name: Install packages
+        working-directory: ./reef-monitor-react-app
+        run: npm ci
+      - name: Unit Test
+        working-directory: ./reef-monitor-react-app
+        run: npm test
